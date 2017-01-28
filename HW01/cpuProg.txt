@@ -1,0 +1,15 @@
+MOV R4, 10   ;Program that adds the squares of integers between 1 and 10
+MOV R5, 10   ;First and Second line's constants have to the same number
+MOV R1, 0
+MOV R3, R4
+SUB R3, 1	;update
+ADD R1, R5
+JMP R3, 9
+JMP 5
+SUB R4, 1	;update
+SUB R5, 1	;update
+ADD R3, R4
+JMP R3, 14
+JMP 4
+PRN R1		;Print result
+HLT         ;End of program
